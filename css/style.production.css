@@ -1,0 +1,457 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+body {
+    background-color: rgb(244, 239, 208);
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+p {
+    color: #A29745;
+}
+
+a {
+    color: #357b70;
+}
+
+a:visited {
+    color: #5E5F42;
+}
+
+a:active {
+    color: #409a75;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid #4f5205;
+}
+
+button {
+    background-color: #A29745;
+    color: rgb(244, 239, 208);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+button:active {
+    background-color: #4f5205;
+}
+
+button:hover {
+    background-color: #5E5F42;
+    cursor: pointer;
+}
+
+button:focus {
+    border: 2px solid #DBC62C;
+}
+
+.button__secondary {
+    background-color: #A29745;
+    color: rgb(244, 239, 208);
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    min-width: 360px;
+    max-width: 1200px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* Fallback layout for older browsers */
+.grid_item {
+    display: inline-block;
+    width: calc(33.333% - 20px);
+    margin: 10px 10px;
+    background-color: #EFD7AC;
+    padding: 10px 20px;
+}
+
+/* CSS Grid layout for modern browsers */
+@supports (display: grid) {
+    .grid {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0 24px 0;
+        padding: 24px 32px;
+        border-radius: 12px;
+    }
+
+    .grid_item {
+        width: auto;
+        margin: 0;
+        background-color: #EFD7AC;
+        padding: 10px 20px;
+    }
+}
+
+.about_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 24px;
+    margin: auto;
+}
+
+.about_child {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 8px;
+}
+
+.about_child:nth-child(1),
+.about_child:nth-child(6),
+.about_child:nth-child(7) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.about_child:nth-child(6) {
+    margin: 32px 0px 8px;
+}
+
+.work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+}
+
+.work_child {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 8px;
+    text-align: center;
+}
+
+.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* Center content horizontally */
+    padding: 20px;
+}
+
+.contact_child {
+    width: 100%;
+    /* Full width of its container */
+    max-width: 600px;
+    margin-bottom: 20px;
+    /* Space between elements */
+    text-align: center;
+    /* Center the text of each child */
+}
+
+#contact-form {
+    background-color: #A29745;
+    /* Rectangle color */
+    padding: 20px;
+    /* Padding inside the form */
+    border-radius: 5px;
+    /* Rounded corners for the form */
+    width: 100%;
+    max-width: 600px;
+    /* I can adjust as needed */
+    margin: 0 auto;
+    /* Center the form */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* Include padding and border in the width and height */
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: #EFD7AC;
+}
+
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    /* Padding inside the input fields */
+    margin-top: 5px;
+    /* Space above each input field */
+    border: 1px solid #ccc;
+    /* Border for the input fields */
+    border-radius: 3px;
+    /* Slightly rounded borders for the input fields */
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #e0b354;
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+
+    }
+
+    .grid_item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+/* setting media queries for tablet screens */
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        -ms-grid-columns: 1fr 16px 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+
+    }
+
+    .grid_item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.button__secondary {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* or 'block' if you want it to take the full width of its container */
+    font-family: inherit;
+    background-color: #A29745;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    margin: auto;
+}
+
+.button__secondary:hover,
+.button__secondary :focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* Center the button horizontally */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* Center the button vertically */
+    margin-top: 20px;
+}
+
+/* Start of animation transformation.
+Animation applied to the sun */
+.sun {
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-name: color-change;
+            animation-name: color-change;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    /* Alternative code which makes the code shorter is to combine all proprieties in a single line
+  .sun{
+     animation: 4s color-change infinite alternate linear } */
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+/* Animation applied to the cloud */
+.cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
+            animation: 30s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+                transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
+                transform: translate(200px, 50px);
+    }
+}
+
+.cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
+            animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+                transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+}
